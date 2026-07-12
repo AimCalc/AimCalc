@@ -52,7 +52,8 @@ nav .brand {
   font-weight: 800; font-size: 42px; color: var(--ink);
 }
 nav .brand:hover { text-decoration: none; }
-.hero-icon { width: 96px; height: 96px; border-radius: 22px; display: block; margin: 0 auto 20px; }
+.hero-icon { width: 96px; height: 96px; border-radius: 22px; display: block; margin: 0 0 20px; }
+@media (max-width: 860px) { .hero-icon { margin: 0 auto 20px; } }
 nav .links { margin-left: auto; display: flex; gap: 22px; }
 nav .links a {
   color: var(--dim); font-size: 14px; font-weight: 500;
