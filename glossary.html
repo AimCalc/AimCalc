@@ -30,7 +30,7 @@
 
   <p class="eyebrow eyebrow-lg">HOW TO USE THE APP</p>
   <ol class="steps">
-    <li><span class="num">1</span><div><b>Add your gun</b><p>Ballistics tab → + → pick a cartridge from the library (it arrives with typical twist, zero, and factory loads) or start blank. Open Edit Profile and set sight height, twist, barrel length, and zero range to match your rifle.</p></div></li>
+    <li><span class="num">1</span><div><b>Add your gun</b><p>Ballistics tab → + → pick a cartridge from the library (it arrives with typical twist, zero, and factory loads) or start blank. Open Edit Gun Profile and set sight height, twist, barrel length, and zero range to match your rifle. For best accuracy, also record the ammo you zeroed with (name, drag model, BC, velocity) in the Zeroed with section: every other load's dial is then computed relative to your scope's actual zero.</p></div></li>
     <li><span class="num">2</span><div><b>Make the velocity yours</b><p>Library velocities come from factory test barrels. Chronograph your load if you can, or shoot a known distance and let True Velocity (in the ammo editor) solve it from your observed drop. Muzzle velocity is the single most influential input.</p></div></li>
     <li><span class="num">3</span><div><b>Set conditions</b><p>Environment tab → Capture Live fills pressure, temperature, humidity, and location; check every value it fetched. For a steep shot, tap the camera icon and sight along the phone to capture incline.</p></div></li>
     <li><span class="num">4</span><div><b>Dial the target</b><p>On Solution: drag the slider, tap ±10/±100, or tap the big number to type an exact range. Set the wind with the clock dial: drag the arrow to where the wind comes from.</p></div></li>
@@ -85,6 +85,7 @@
     <div class="term"><h3>Coriolis effect</h3><p>The Earth rotates under the bullet during flight. It's tiny (a tenth or two of a MIL at 1,000 yards) and only matters at long range. Enter latitude and azimuth of fire on the Environment page to include it.</p></div>
     <div class="term"><h3>True Velocity (truing)</h3><p>Solving your real muzzle velocity from observed impacts instead of trusting the box. Shoot a measured distance, enter how far the group landed high or low (ammo editor → True Velocity), and AimCalc computes the velocity your barrel actually delivers, then applies it to the load with one tap.</p></div>
     <div class="term"><h3>Twist rate &amp; stability</h3><p>"1:8" means the rifling turns the bullet one revolution per 8 inches. Long heavy bullets need fast twists to stabilize. The engine computes a Miller stability factor; presets ship with each cartridge's typical twist.</p></div>
+    <div class="term"><h3>Zeroed with</h3><p>Your scope has one mechanical zero, and it belongs to the specific load you zeroed with. Record that load's BC and velocity in Edit Gun Profile and AimCalc solves the scope angle from it, so every other load dials honestly relative to your real zero. Field-proven in .22 LR, where one 50 yd zero can serve everything from 710 to 1470 fps ammo; leave it blank if you re-zero for each load.</p></div>
     <div class="term"><h3>Where the math comes from</h3><p>Nothing in AimCalc is guesswork or reverse-engineered: the point-mass equations of motion follow McCoy's Modern Exterior Ballistics, drag uses the public G1/G7 standard tables from the U.S. Army's Ballistic Research Laboratory, spin drift is Bryan Litz's published formula with Don Miller's stability rule, and the atmosphere is the ICAO standard with the Buck humidity correction. These are open scientific publications, the same math behind every serious solver, implemented independently.</p></div>
   </div>
 
@@ -141,6 +142,7 @@
   <p class="eyebrow">FIELD TIPS</p>
   <ul class="tips-list">
     <li><b>True your muzzle velocity first.</b> Shoot a group at 400–600 yards, note the miss, and let True Velocity in the ammo editor solve your real MV. Everything downstream gets better.</li>
+    <li>One zero, many loads? Record your zero ammo in the gun profile. A 710 fps subsonic and a 1470 fps hyper dial very differently through the same scope zero, and the app can only know that if you tell it what the zero belongs to.</li>
     <li>Chronograph if you can: factory box velocities are from test barrels and often 50–150 fps optimistic for shorter barrels.</li>
     <li>Tap Capture Live at the firing line, then eyeball every value it fills. Fetched weather is a head start, not gospel, especially wind.</li>
     <li>Wind at the shooter isn't wind at the target. Read mirage and flags downrange; enter your best average, and favor the wind call you can defend.</li>
