@@ -106,6 +106,19 @@ h1 .accent { color: var(--blue); }
 .appstore-badge small { font-size: 10px; color: var(--dim); letter-spacing: 0.06em; }
 .appstore-badge span { font-size: 17px; font-weight: 600; }
 .cta-note { font-size: 13px; color: var(--dim); font-family: var(--mono); }
+.platform-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 14px; padding: 7px 14px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--panel);
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+  color: var(--dim);
+}
+.pill-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 6px rgba(132, 199, 155, 0.5);
+}
 
 /* ---------- phone mockup ---------- */
 .phone {
