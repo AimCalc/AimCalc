@@ -194,6 +194,7 @@ h2 {
 .glyph-readout b { font-family: var(--mono); font-size: 13px; font-weight: 700; font-feature-settings: "tnum"; }
 .glyph-readout small { font-size: 8px; font-weight: 600; letter-spacing: .08em; }
 .glyph-readout .ro-elev, .glyph-readout .ro-wind { color: var(--teal); }
+.feature .glyph-chrono { display: block; margin-bottom: 10px; }
 .feature h3 { font-size: 16px; font-weight: 650; margin-bottom: 6px; }
 .feature p { font-size: 14px; color: var(--dim); }
 
