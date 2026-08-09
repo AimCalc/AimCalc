@@ -56,7 +56,7 @@ nav .brand:hover { text-decoration: none; }
 @media (max-width: 860px) { .hero-icon { margin: 0 auto 20px; } }
 nav .links { margin-left: auto; display: flex; gap: 22px; }
 nav .links a {
-  color: var(--dim); font-size: 14px; font-weight: 500;
+  color: var(--dim); font-size: 17px; font-weight: 500;
 }
 nav .links a:hover { color: var(--ink); text-decoration: none; }
 
@@ -382,7 +382,7 @@ footer a:hover { color: var(--ink); }
     flex-wrap: wrap; gap: 6px 16px;
     justify-content: flex-end;
   }
-  .topbar .links a { font-size: 13.5px; }
+  .topbar .links a { font-size: 15.5px; }
   .hero { padding: 40px 0 56px; gap: 36px; }
   .phone { width: min(290px, 88vw); }
   .lede { font-size: 16px; }
