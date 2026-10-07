@@ -17,7 +17,8 @@ modify, or republish its contents, design, artwork, or text.
 - `privacy.html`, App Store privacy policy URL target
 - `terms.html`, Terms of Use (mirrors the in-app first-launch agreement)
 - `styles.css`, `favicon.svg`, shared assets
-- `img/`, app screenshots used on the landing page
+- `theme.js`, the light/dark toggle in the top bar (dark by default, choice remembered in localStorage)
+- `img/`, app screenshots used on the landing page; `img/light/` holds the same shots in the app's light mode and is swapped in by the toggle
 - `CNAME`, custom domain for GitHub Pages (delete if hosting elsewhere)
 
 ## Deploying
