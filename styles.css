@@ -122,7 +122,7 @@ h1 .accent { color: var(--blue); }
 .appstore-badge:hover { border-color: var(--blue); text-decoration: none; }
 .appstore-badge small { font-size: 10px; color: var(--dim); letter-spacing: 0.06em; }
 .appstore-badge span { font-size: 17px; font-weight: 600; }
-.cta-note { font-size: 13px; color: var(--dim); font-family: var(--mono); }
+.cta-note { font-size: 13px; color: var(--dim); font-family: var(--mono); line-height: 1.5; }
 .platform-pill {
   display: inline-flex; align-items: center; gap: 8px;
   margin-top: 14px; padding: 7px 14px;
@@ -281,6 +281,7 @@ h2 {
 .refs { margin-top: 14px; font-size: 12.5px; color: var(--dim); max-width: 80ch; line-height: 1.7; }
 
 /* ---------- privacy strip ---------- */
+.strips { display: grid; gap: 14px; }
 .privacy-strip {
   display: flex; gap: 18px; align-items: flex-start;
   background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
