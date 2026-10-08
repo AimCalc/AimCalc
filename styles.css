@@ -437,9 +437,9 @@ footer a:hover { color: var(--ink); }
 [data-theme="light"] {
   color-scheme: light;
   --ground: #faf8f3;
-  --panel: #f1eee6;
-  --panel-2: #e6e2d8;
-  --line: #dbd7cc;
+  --panel: #ebe7dc;
+  --panel-2: #dfdacd;
+  --line: #cdc7b8;
   --ink: #15173a;
   --dim: #565b78;
   --blue: #3c3b6e;
