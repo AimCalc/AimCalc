@@ -33,7 +33,7 @@
 
   <p class="eyebrow eyebrow-lg">HOW TO USE THE APP</p>
   <ol class="steps">
-    <li><span class="num">1</span><div><b>Add your gun</b><p>Ballistics tab → + → pick a cartridge from the library (it arrives with typical twist, zero, and factory loads) or start blank. Open Edit Gun Profile and set sight height, twist, barrel length, and zero range to match your rifle. For best accuracy, also record the ammo you zeroed with (name, drag model, BC, velocity) in the Zeroed with section: every other load's dial is then computed relative to your scope's actual zero.</p></div></li>
+    <li><span class="num">1</span><div><b>Add your gun</b><p>Ballistics tab → + → pick a cartridge from the library (83 factory loads with the maker's published BC and velocity, plus typical twist and zero) or start blank. Open Edit Gun Profile and set sight height, twist, barrel length, and zero range to match your rifle. For best accuracy, also record the ammo you zeroed with (name, drag model, BC, velocity) in the Zeroed with section: every other load's dial is then computed relative to your scope's actual zero.</p></div></li>
     <li><span class="num">2</span><div><b>Make the velocity yours</b><p>Library velocities come from factory test barrels. Chronograph your load if you can, or shoot a known distance and let True Velocity (in the ammo editor) solve it from your observed drop. Muzzle velocity is the single most influential input.</p></div></li>
     <li><span class="num">3</span><div><b>Set conditions</b><p>Environment tab → Capture Live fills pressure, temperature, humidity, and location; check every value it fetched. For a steep shot, tap the camera icon and sight along the phone to capture incline.</p></div></li>
     <li><span class="num">4</span><div><b>Dial the target</b><p>On Solution: drag the slider, tap ±10/±100, or tap the big number to type an exact range. Set the wind with the clock dial: drag the arrow to where the wind comes from.</p></div></li>
@@ -42,7 +42,7 @@
     <li><span class="num">7</span><div><b>Save your D.O.P.E.</b><p>Tap the share icon → Save to Photos for an offline D.O.P.E. card, or Share… to AirDrop it to a spotter. On the watch, long press the solution page to share a card straight from your wrist. Cards stamp their conditions and time, so you'll know when they're stale.</p></div></li>
     <li><span class="num">8</span><div><b>Log the session</b><p>Settings → Range Journal → +. AimCalc snapshots the moment: profile, range, solution, conditions, and location. You add a photo of the target and your notes. Entries read newest-first, like a shooter's diary that builds itself.</p></div></li>
     <li><span class="num">9</span><div><b>Work a stage with targets</b><p>Tap the target icon on Solution to save named targets (range + incline). Engage one with a tap, and on the Apple Watch, tap the chevrons or swipe the target bar to flip between them, crown to fine-tune.</p></div></li>
-    <li><span class="num">10</span><div><b>Shoot from the wrist</b><p>The watch companion syncs every profile and your conditions automatically, then solves on-device: tap the profile name to switch guns, crown changes range, the wind page sets speed and direction and shows the air the solution flies in. It keeps working with the phone in your pack.</p></div></li>
+    <li><span class="num">10</span><div><b>Shoot from the wrist</b><p>The watch companion syncs every profile and your conditions automatically, then solves on-device: crown changes range, the wind page sets speed and direction and shows the air the solution flies in. The third page is Settings: Dark or Light appearance, MIL or MOA, the profile and target pickers, and Sync from iPhone, which pulls the phone's current profile, range, wind, target, and units. It keeps working with the phone in your pack.</p></div></li>
   </ol>
 
   <p class="eyebrow">THE SOLUTION</p>
@@ -55,9 +55,9 @@
     <div class="term"><h3>D.O.P.E.</h3><p>"Data On Previous Engagements", your proven come-ups by range. The D.O.P.E. save button turns the current solution into a photo card you can reference with the phone in airplane mode or print for your stock.</p></div>
     <div class="term"><h3>Zero range</h3><p>The distance where your sight line and bullet path intersect and your turrets read zero. AimCalc stores the atmosphere from the day you zeroed, so solutions stay honest when you travel to different altitude or weather.</p></div>
     <div class="term"><h3>Sight height</h3><p>Vertical distance from bore centerline to the middle of your scope. It's why holds get huge up close: at 5 yards the bullet is still riding almost a full sight-height below where you're aiming.</p></div>
-    <div class="term"><h3>Targets</h3><p>Saved firing points: name, range, incline, and azimuth. Build the list at the stage walkthrough (target icon on Solution), then engage plates with a tap, or swipe between them on the watch. Manually changing range disengages the target, since your D.O.P.E. no longer matches it.</p></div>
+    <div class="term"><h3>Targets</h3><p>Saved firing points: name, range, incline, and azimuth. Build the list at the stage walkthrough (target icon on Solution), then engage plates with a tap, or swipe between them on the watch (or pick one from the watch Settings page). Manually changing range disengages the target, since your D.O.P.E. no longer matches it.</p></div>
     <div class="term"><h3>Range Journal</h3><p>A session log that captures the whole moment in one tap: the active profile, range, the solution in that gun's own correction style, full conditions, location, and the engaged target, plus your target photo and notes. Browse it newest-first in Settings → Range Journal. The photo of your group next to the solution you dialed is how D.O.P.E. becomes knowledge.</p></div>
-    <div class="term"><h3>Watch companion</h3><p>AimCalc on Apple Watch runs the same solver on-device. The phone syncs every profile, your environment, and the target list automatically; the watch owns range (Digital Crown), wind, and its own profile choice, and can share a D.O.P.E. card with a long press. Last sync persists, so it solves with the phone out of reach.</p></div>
+    <div class="term"><h3>Watch companion</h3><p>AimCalc on Apple Watch runs the same solver on-device. The phone syncs every profile, your environment, and the target list automatically; the watch owns range (Digital Crown), wind, and its own profile, units, and appearance, and can share a D.O.P.E. card with a long press. Sync from iPhone on the watch Settings page makes the wrist match the phone again, everything but appearance. Last sync persists, so it solves with the phone out of reach.</p></div>
   </div>
 
   <figure class="diagram">
@@ -83,7 +83,7 @@
     <div class="term"><h3>Ballistic coefficient (BC)</h3><p>How well a bullet resists drag compared to a standard reference shape; higher is slipperier. A BC only means something paired with its drag model: G7 0.326 and G1 0.646 can describe the same bullet.</p></div>
     <div class="term"><h3>G1 vs G7 drag models</h3><p>Two reference projectile shapes. G1 fits flat-base and older bullet designs; G7 fits modern long boat-tail match bullets and stays truer at long range. Use whichever BC your bullet maker publishes: never mix a G1 number into a G7 field.</p></div>
     <div class="term"><h3>Muzzle velocity (MV)</h3><p>Bullet speed leaving your barrel. The single most influential input you control. Factory numbers come from test barrels, a shorter barrel gives up real speed, so chronograph your rifle or true the velocity against observed drops.</p></div>
-    <div class="term"><h3>Transonic / subsonic</h3><p>As a bullet slows toward the speed of sound (Mach 1.2 down to 1.0) drag spikes and some bullets lose stability and accuracy. AimCalc shades this band teal on charts and colors Mach readouts; treat solutions past it with field verification.</p></div>
+    <div class="term"><h3>Transonic / subsonic</h3><p>As a bullet slows toward the speed of sound (Mach 1.2 down to 1.0) drag spikes and some bullets lose stability and accuracy. AimCalc shades this band on charts and colors Mach readouts; treat solutions past it with field verification.</p></div>
     <div class="term"><h3>Spin drift</h3><p>Gyroscopic drift in the direction of your rifling twist, a right-twist barrel walks shots a few tenths of a MIL right by 1,000 yards. AimCalc includes it automatically using your twist rate and bullet dimensions.</p></div>
     <div class="term"><h3>Coriolis effect</h3><p>The Earth rotates under the bullet during flight. It's tiny (a tenth or two of a MIL at 1,000 yards) and only matters at long range. Enter latitude and azimuth of fire on the Environment page to include it.</p></div>
     <div class="term"><h3>True Velocity (truing)</h3><p>Solving your real muzzle velocity from observed impacts instead of trusting the box. Shoot a measured distance, enter how far the group landed high or low (ammo editor → True Velocity), and AimCalc computes the velocity your barrel actually delivers, then applies it to the load with one tap.</p></div>
@@ -150,15 +150,16 @@
     <li>Tap Capture Live at the firing line, then eyeball every value it fills. Fetched weather is a head start, not gospel, especially wind.</li>
     <li>Wind at the shooter isn't wind at the target. Read mirage and flags downrange; enter your best average, and favor the wind call you can defend.</li>
     <li>Save a D.O.P.E. card before you lose signal. The card stamps its conditions, so you'll know later whether that D.O.P.E. still applies.</li>
-    <li>Watch the Mach column. Inside the teal transonic band, trust the app less and your impacts more.</li>
+    <li>Watch the Mach column. Inside the shaded transonic band, trust the app less and your impacts more.</li>
     <li>Re-zero (or at least verify) when you change ammo lots, mount a suppressor, or travel to a very different altitude.</li>
-    <li>Duplicate an ammo profile before tweaking it for load development: swipe left on the load in the Ballistics tab.</li>
+    <li>Duplicate an ammo profile before tweaking it for load development: swipe left on the load in the Ballistics tab and tap Duplicate. A full swipe deletes, so stop short.</li>
     <li>At close range the hold is all sight height. Don't be surprised by an 11 MIL hold-up at 5 yards; that's geometry, not a bug.</li>
     <li>Steep shot? Don't guess the angle: tap the camera icon on Environment and sight along the phone's edge at the target.</li>
     <li>Running a stage: save each plate as a target during the walkthrough, then swipe through them on the watch. The crown still fine-tunes after a swipe.</li>
     <li>AirDrop beats reading numbers over the wind: use Share… in the D.O.P.E.-card menu to send your card straight to a spotter's phone.</li>
-    <li>The watch keeps the last synced profile and conditions, so it solves at the trailhead with the phone in your pack, but re-sync when conditions change.</li>
+    <li>The watch keeps the last synced profile and conditions, so it solves at the trailhead with the phone in your pack. When conditions change, tap Sync from iPhone on the watch Settings page to pull the phone's latest.</li>
     <li>Red dot or irons? Set the gun's corrections to Holdover. A disciplined shooter who can eyeball the hold can hang surprisingly close to a dialed scope; AimCalc gives you the exact number to eyeball.</li>
+    <li>Bright sun or tired eyes? Settings → Appearance switches to a light palette, and Text size steps the whole app up; the watch has its own Dark/Light switch on its Settings page.</li>
   </ul>
 
   <footer>
