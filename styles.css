@@ -233,28 +233,7 @@ h2 {
 /* ---------- watch ---------- */
 .watch-flex { display: flex; gap: 56px; align-items: center; flex-wrap: wrap; }
 .watch-flex .copy { flex: 1; min-width: 280px; }
-.watch {
-  width: 200px; height: 244px; border-radius: 52px;
-  background: #0b0e0f; border: 1px solid var(--line);
-  box-shadow: 0 24px 60px rgba(0,0,0,.5), inset 0 0 0 6px #000;
-  padding: 26px 18px; position: relative; flex-shrink: 0;
-}
-.watch::after {
-  content: ""; position: absolute; right: -7px; top: 74px;
-  width: 7px; height: 34px; background: #222; border-radius: 0 4px 4px 0;
-}
-.w-profile { font-size: 10px; color: var(--dim); text-align: center; margin-bottom: 3px;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.w-target { font-size: 11px; font-weight: 600; color: var(--green); text-align: center; }
-.w-dots { display: flex; gap: 4px; justify-content: center; margin: 4px 0 8px; }
-.w-dots i { width: 4px; height: 4px; border-radius: 50%; background: #333; }
-.w-dots i.on { background: var(--green); }
-.w-range { font-family: var(--mono); font-size: 26px; font-weight: 700; text-align: center; }
-.w-range small { font-size: 10px; color: var(--dim); }
-.w-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 9px; }
-.w-label { font-family: var(--mono); font-size: 9px; letter-spacing: .15em; color: var(--dim); }
-.w-val { font-family: var(--mono); font-size: 24px; font-weight: 700; }
-.w-val small { font-size: 9px; font-weight: 600; }
+.watch-shot { width: 200px; margin: 0; }
 
 .checks { list-style: none; margin-top: 8px; }
 .checks li {
@@ -438,6 +417,7 @@ footer a:hover { color: var(--ink); }
   section { padding: 52px 0; }
   h2 { font-size: 25px; }
   .watch-flex { gap: 32px; }
+  .watch-shot { width: 170px; margin: 0 auto; }
   .mono-block { padding: 14px 16px; }
   .mono-block pre { font-size: 11.5px; }
   .privacy-strip { flex-direction: column; gap: 10px; padding: 20px; }
@@ -492,11 +472,3 @@ footer a:hover { color: var(--ink); }
 [data-theme="light"] .range-track i { box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
 [data-theme="light"] .lightbox { background: rgba(250, 248, 243, .94); }
 [data-theme="light"] .lightbox img { box-shadow: 0 30px 80px rgba(21, 23, 58, .3); }
-/* The watch mockup follows the watch app's light mode: cream screen inside
-   the black bezel, flag blue and red readouts. */
-[data-theme="light"] .watch {
-  background: var(--ground);
-  border-color: #2a2c44;
-  box-shadow: 0 24px 60px rgba(21, 23, 58, .25), inset 0 0 0 6px #000;
-}
-[data-theme="light"] .w-dots i { background: #cfccc2; }
